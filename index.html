@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style></style>
+    <title>Spotify</title>
 </head>
+
 <body>
-    
+
+
+    <div class="sidebar">
+        <div class="logo">Spotify</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cerca</a></li>
+                <li><a href="#">La tua libreria</a></li>
+            </ul>
+        </nav>
+        <div class="playlist">
+            <button class="create-playlist">+ Crea playlist</button>
+            <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <!-- altre playlist -->
+            </ul>
+        </div>
+        <div class="user">John Doe</div>
+    </div>
+
+    <div class="container">
+
+        <header class="call-to-action">
+            <button class="upgrade">EFFETTUA L'UPGRADE</button>
+        </header>
+
+        <main>
+
+            <div class="top-nav">
+                <ul>
+                    <li><a href="#" class="active">In evidenza</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Classifiche</a></li>
+                    <li><a href="#">Generi e mood</a></li>
+                    <li><a href="#">Nuove uscite</a></li>
+                    <li><a href="#">Scopri</a></li>
+                </ul>
+            </div>
+            <section class="recently-played">
+                <h2>Recently played</h2>
+                <div class="cards">
+                    <div class="card">Pantera Metallica</div>
+                    <div class="card">Stranger Things</div>
+                    <div class="card">A quiet place</div>
+                    <div class="card">Split</div>
+                    <div class="card">A cure for wellness</div>
+                    <div class="card">Sinister</div>
+                </div>
+            </section>
+
+            <section class="created-for-you">
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="cards">
+                    <div class="card">Release Radar</div>
+                    <div class="card">Daily Mix 1</div>
+                </div>
+            </section>
+
+            <section class="popular-artists">
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="cards">
+                    <div class="card">Artista 1</div>
+                    <div class="card">Artista 2</div>
+                    <div class="card">Artista 3</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="media-player">
+        <div class="track-info">
+            <img src="img/sinister.jpeg" alt="Cover">
+            <div class="track-details">
+                <div class="track-title">Sinister</div>
+                <div class="track-artist">Brano Nome</div>
+            </div>
+        </div>
+
+        <div class="simulator">
+            <div class="progress">
+                <span class="current-time">0:25</span>
+                <div class="progress-bar">
+                    <div class="progress-filled"></div>
+                </div>
+                <span class="duration">4:35</span>
+            </div>
+            <div class="controls">
+                <button class="shuffle">shuffle</button>
+                <button class="prev">previous</button>
+                <button class="play">play</button>
+                <button class="next">next</button>
+                <button class="repeat">repeat</button>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="queue">1</button>
+            <button class="devices">2</button>
+            <button class="volume">3</button>
+            <div class="volume-bar">
+                <div class="volume-filled"></div>
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
