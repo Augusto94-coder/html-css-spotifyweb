@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <style></style>
     <title>Spotify</title>
+    <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
@@ -23,9 +24,9 @@
         <div class="logo"><i class="fa-brands fa-spotify"></i><h2>Spotify</h2></div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cerca</a></li>
-                <li><a href="#">La tua libreria</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
+                <li><img src="img/libreria.svg" alt=""><a href="#"> tua libreria</a></li>
             </ul>
         </nav>
         <div class="playlist">
@@ -98,22 +99,24 @@
                 <div class="track-title">Sinister</div>
                 <div class="track-artist">Brano Nome</div>
             </div>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-folder"></i>
         </div>
 
         <div class="simulator">
+            <div class="controls">
+                <button class="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="prev"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play"><i class="fa-regular fa-circle-play"></i></button>
+                <button class="next"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="repeat"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
             <div class="progress">
                 <span class="current-time">0:25</span>
                 <div class="progress-bar">
                     <div class="progress-filled"></div>
                 </div>
                 <span class="duration">4:35</span>
-            </div>
-            <div class="controls">
-                <button class="shuffle">shuffle</button>
-                <button class="prev">previous</button>
-                <button class="play">play</button>
-                <button class="next">next</button>
-                <button class="repeat">repeat</button>
             </div>
         </div>
         <div class="actions">

@@ -44,9 +44,24 @@ body {
     gap: 10px;
 }
 
+.sidebar nav i {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+
+}
+
 .sidebar nav a {
     text-decoration: none;
     color: #B3B3B3;
+}
+
+.sidebar nav img {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .sidebar .playlist {
@@ -55,27 +70,27 @@ body {
 }
 
 .sidebar .create-playlist {
-  display: flex;
-  align-items: center;          
-  background: transparent;      
-  color: #B3B3B3;              
-  border: none;
-  padding: 0.5rem 0;            
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: #B3B3B3;
+    border: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
 }
 
 .sidebar .create-playlist i {
-  display: inline-block;         
-  width: 1.5rem;                 
-  height: 1.5rem;
-  line-height: 1.5rem;           
-  text-align: center;                   
-  background-color: #B3B3B3;
-  color: #000;
-  font-size: 1rem;
-  flex-shrink: 0;                
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #B3B3B3;
+    color: #000;
+    font-size: 1rem;
+    flex-shrink: 0;
 }
 
 .sidebar .playlist ul {
@@ -89,6 +104,7 @@ body {
     font-weight: bold;
     margin: 0.5rem;
 }
+
 .sidebar .playlist li {
     margin: 0.5rem 0;
 }
@@ -178,15 +194,25 @@ section h2 {
 }
 
 .card {
-    margin: 1.5em;
-    flex-shrink: 0;
-    display: inline-block;
+    flex: 0 0 auto;
+    display:inline-block;
 }
 
-.container .card img {
+.card img {
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.created-for-you p, .popular-artists p {
+    margin-bottom:2rem;
+}
+/* .container .card img {
+    display: block;
     height: 100%;
     width: 70%;
 }
+ */
 .popular-artists .card img {
     border-radius: 50%;
 }
@@ -197,12 +223,17 @@ section h2 {
     left: 0;
     bottom: 0;
     height: 10%;
-    width:100%;
+    width: 100%;
     background: #181818;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.media-player .track-info,
+.media-player .actions {
+    flex: 0 0 auto;
 }
 
 .media-player .track-info {
@@ -212,8 +243,21 @@ section h2 {
 }
 
 .media-player .track-info img {
-    width: 56px;
-    height: 56px;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.media-player .track-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.media-player .track-info i {
+  margin-left: 1rem;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
 .media-player .controls,
@@ -236,18 +280,19 @@ section h2 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    flex: 1 1 auto;
+    margin: 0 1.5rem;
 }
 
-.media-player .progress,
-.media-player .actions .volume-bar {
+.media-player .progress {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.media-player .progress-bar,
-.media-player .volume-bar {
-    width: 100px;
+.media-player .progress-bar {
+    width: 40%;
     height: 4px;
     background: #404040;
     border-radius: 2px;
@@ -260,4 +305,8 @@ section h2 {
     width: 30%;
     height: 100%;
     background: #1DB954;
+}
+
+.media-player .volume-bar {
+
 }
