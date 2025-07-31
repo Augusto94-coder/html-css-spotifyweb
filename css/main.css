@@ -26,8 +26,15 @@ body {
 }
 
 .sidebar .logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.sidebar h2 {
+    padding: 0.5rem;
 }
 
 .sidebar nav ul {
@@ -48,14 +55,27 @@ body {
 }
 
 .sidebar .create-playlist {
-    background: #FFF;
-    color: #000;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;          
+  background: transparent;      
+  color: #B3B3B3;              
+  border: none;
+  padding: 0.5rem 0;            
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar .create-playlist i {
+  display: inline-block;         
+  width: 1.5rem;                 
+  height: 1.5rem;
+  line-height: 1.5rem;           
+  text-align: center;                   
+  background-color: #B3B3B3;
+  color: #000;
+  font-size: 1rem;
+  flex-shrink: 0;                
 }
 
 .sidebar .playlist ul {
@@ -65,12 +85,19 @@ body {
     gap: 8px;
 }
 
+.sidebar .playlist span {
+    font-weight: bold;
+    margin: 0.5rem;
+}
+.sidebar .playlist li {
+    margin: 0.5rem 0;
+}
+
 .sidebar .playlist a {
     color: #B3B3B3;
     text-decoration: none;
     font-size: 0.9rem;
 }
-
 
 /* RICORDA BENE CHE DIPENDE TUTTO DA COME ORGANIZZI GLI ELEMENTI ALL'INTERNO DEL CONTENITORE: NEL CASO DI SPECE, POSSO RAGGRUPPARLI IN DUE ELEMENTI E USARE JUSTIFY-CONTENT: SPACE-BETWEEN. 
    IN QUESTO CASO HO OPTATO PER 4 ELEMENTI, DI CUI PLAYLIST è DI TIPO FLEX-GROW */
@@ -153,10 +180,7 @@ section h2 {
 .card {
     margin: 1.5em;
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #B3B3B3;
+    display: inline-block;
 }
 
 .container .card img {
