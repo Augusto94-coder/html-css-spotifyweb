@@ -267,6 +267,10 @@ section h2 {
     gap: 16px;
 }
 
+.media-player .actions {
+    width: 10%;
+}
+
 .media-player button {
     background: transparent;
     border: none;
@@ -294,6 +298,15 @@ section h2 {
 
 .media-player .progress-bar {
     width: 40%;
+    height: 4px;
+    background: #404040;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.media-player .volume-bar {
+    width: 60%;
     height: 4px;
     background: #404040;
     border-radius: 2px;
