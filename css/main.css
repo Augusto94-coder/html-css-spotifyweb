@@ -289,6 +289,7 @@ section h2 {
     display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: center;
 }
 
 .media-player .progress-bar {
@@ -307,6 +308,6 @@ section h2 {
     background: #1DB954;
 }
 
-.media-player .volume-bar {
+/* .media-player .volume-bar {
 
-}
+} */
